@@ -1,0 +1,90 @@
+
+.screen_container{
+    position: fixed;
+    margin-left: 7%;
+    margin-top: 7%;
+    width: 93%;
+    height: 75%;
+}
+.abb_robo_screen_content{
+    margin-left: 8%;
+    margin-top: 2%;
+    width: 92%;
+    height: 96%;
+}
+
+.abb_robo_info{
+    width: 70%;
+    height: 100%;
+    display: inline-block;
+}
+.abb_robo_section{
+    width: 40%;
+    height: 90%;
+    margin: 0%;
+    display: inline-block;
+    padding: 0%;
+}
+
+.abb_robo_section.first_coloumn{
+    margin-left: 0%;
+    margin-bottom: 0%;
+}
+.abb_robo_section.second_coloumn{
+    margin-left: 2%;
+    margin-bottom: 0%;
+}
+
+.abb_robo_box{
+    background-color: black;
+    width: 94%;
+    height: 30%;
+    margin: 2%;
+}
+.abb_robo_box.label{
+    vertical-align: middle;
+}
+.abb_robo_box_heading{
+    position: relative;
+    top: 10%;
+    margin-top: 50px;
+    display: block;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    margin: auto;
+    font-size: 35px;
+}
+.abb_robo_box_value{
+    position: relative;
+    top: 30%;
+    display: block;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 50px;
+    margin: auto;
+    color: #1EB1ED;
+}
+.project_details{
+    width:25%;
+    height: 80%;
+    display: inline-block;
+    vertical-align: top;
+    padding-top:2%;
+    text-align: center;
+    font-size: 25px;
+    
+}
+.project_details_header{
+    background-color: black;
+    color:white;
+    font-size: 35px;
+    font-weight: 600;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+.project_details_info{
+    padding-top:8px;
+    font-size: 35px;
+    padding-bottom:8px;
+}

@@ -1,0 +1,56 @@
+.screen_container{
+    position: fixed;
+    margin-left: 7%;
+    margin-top: 5%;
+    width: 93%;
+    height: 75%;
+}
+.gripper_listing{
+    margin-top: 4%;
+    width:70%;
+    height: 100%;
+    display: inline-block;
+    padding-left: 2%;
+}
+.gripper_details{
+    width:25%;
+    height: 100%;
+    margin-top: 4%;
+    display: inline-block;
+    vertical-align: top;
+    padding-top:2%;
+    text-align: center;
+    font-size: 25px;
+    
+}
+.gripper_overview{
+    padding: 3%;
+    margin: 3%;
+    width:20%;
+    display: inline-block;
+    background-color: black;
+    border-radius: 30px;
+}
+.gripper_image{
+    max-width: 100%;
+    max-height: 100%;
+}
+.gripper_label{
+    color:#006FA2;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    width:100%;
+    display: block;
+}
+.gripper_details_header{
+    background-color: black;
+    color:white;
+    font-weight: 600;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+.gripper_details_info{
+    padding-top:8px;
+    padding-bottom:8px;
+}

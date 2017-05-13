@@ -1,0 +1,131 @@
+.robo_top_menu{
+    background-color: black;
+    height: 10%;
+    width: 100%;
+}
+.robo_side_menu{
+    width: 7%;
+    background-color: black;
+    height: 87%;
+    top: 10%;
+}
+.robo_bottom_menu{
+    background-color: black;
+	position: absolute;
+	height: 10%;
+	left:0;
+	right:0;
+	bottom:0;
+	display: inline-flex;
+}
+.robo_left_menu{
+    position: fixed;
+    width: 1%;
+    background-color: black;
+    height: 87%;
+    top: 10%;
+    margin-left: 99%;
+    float: right;
+    display: inline-block;
+}
+
+label.abb_heading{
+    color: white;
+    margin-left: 5%;
+    font-size: 30px;
+    display: inline-block;
+}
+
+label.abb_heading.main{
+    color: white;
+    margin-left: 2%;
+    margin-top: 1%;
+    display: inline-block;
+    font-size: 45px;
+}
+
+label.abb_heading.user{
+    color: white;
+    margin-right: 4%;
+    float: right;
+    display: inline-block;
+    margin-top: 2%;
+    font-size: 30px;
+}
+img.abb_side_heading.navigation{
+    margin-left: 8%;
+    margin-top: 10%;
+}
+
+img.abb_side_heading.screen1{
+    margin-left: 25%;
+    margin-top: 70%;
+}
+
+img.abb_side_heading.screen2{
+    margin-left: 25%;
+    margin-top: 70%;
+}
+
+img.abb_side_heading.screen3{
+    margin-left: 25%;
+    margin-top: 70%;
+}
+
+img.abb_side_heading.screen4{
+    margin-left: 25%;
+    margin-top: 70%;
+}
+label.abb_trend_text{
+    font-size: 52px;
+    margin: 10px;
+    float: right;
+}
+img.robo_stop_prod{
+    margin-left: 38%;
+    width: 6%;
+    height: 80%;
+    margin-top: 0.5%;
+    display: inline-block;
+}
+label.stop_production_text{
+    color: white;
+    font-size: 40px;
+    vertical-align: middle;
+    margin-top: 1%;
+}
+
+img.robo_start_prod{
+    width: 6%;
+    height: 80%;
+    margin-top: 0.5%;
+    margin-left: 28%;
+    display: inline-block;
+}
+img.robo_stop_prod_screen{
+    margin-left: 3%;
+    width: 6%;
+    height: 80%;
+    margin-top: 0.5%;
+    display: inline-block;
+}
+
+label.stop_production_text_screen{
+    color: white;
+    font-size: 40px;
+    vertical-align: middle;
+    margin-top: 1%;
+}
+label.start_production_text{
+    color: white;
+    font-size: 40px;
+    vertical-align: middle;
+    margin-top: 1%;
+}
+label.set_pp_text{
+    margin-left: 3%;
+    color: white;
+    font-size: 40px;
+    vertical-align: middle;
+    margin-top: 1%;
+}

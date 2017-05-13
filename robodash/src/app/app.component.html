@@ -1,0 +1,9 @@
+<div class="robo_container">
+<div class="main-body">
+    <top-menu-root *ngIf="data.getShowTopMenu()"></top-menu-root>
+    <router-outlet></router-outlet>
+    <side-menu-root *ngIf="data.getShowLeftMenu()"></side-menu-root>
+    <bottom-menu-root *ngIf="data.getShowBottomMenu()"></bottom-menu-root>
+    <left-menu-root *ngIf="data.getShowRightMenu()"></left-menu-root>
+</div>
+</div>

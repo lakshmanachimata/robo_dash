@@ -1,0 +1,18 @@
+* {
+  -webkit-border-radius: 0 !important;
+     -moz-border-radius: 0 !important;
+          border-radius: 0 !important;
+}
+
+.screen_tabs{
+    margin: 1%;
+    margin-right: 2%;
+    background-color: black;
+}
+.nav-pills { border-bottom: 4px solid #DDD; }
+.nav-pills > li { width:20%; text-align: center; }
+.nav-pills > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover { border-width: 0; }
+.nav-pills > li > a { border: none; color:white;font-weight: bold;font-size: 15pt; }
+.nav-pills > li.active > a, .nav-pills > li > a:hover { border: none; color:white !important; background: transparent; }
+.nav-pills > li > a::after { content: ""; background: #4285F4; height: 4px; position: absolute; width: 100%; left: 0px; bottom: -1px; transition: all 250ms ease 0s; transform: scale(0); }
+.nav-pills > li.active > a::after, .nav-tabs > li:hover > a::after { transform: scale(1); }
