@@ -57,7 +57,7 @@
 }
 .abb_robo_box_value{
     position: relative;
-    top: 30%;
+    top: 20%;
     display: block;
     text-align: center;
     vertical-align: middle;
@@ -78,13 +78,13 @@
 .project_details_header{
     background-color: black;
     color:white;
-    font-size: 35px;
+    font-size: 28px;
     font-weight: 600;
     padding-top:10px;
     padding-bottom:10px;
 }
 .project_details_info{
     padding-top:8px;
-    font-size: 35px;
+    font-size: 28px;
     padding-bottom:8px;
 }

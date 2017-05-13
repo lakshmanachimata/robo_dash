@@ -1,4 +1,12 @@
 <div class="screen_container">
+    <div class="screen_tabs">
+    <ul class="nav nav-pills">
+        <li [class.active]="data.getScreen()==1"><a href="javascript:void(0)">Project</a></li>
+        <li [class.active]="data.getScreen()==2"><a href="javascript:void(0)">Stations</a></li>
+        <li [class.active]="data.getScreen()==3" (click)="menuItemClick('screen3')"><a href="javascript:void(0)">Parts</a></li>
+        <li [class.active]="data.getScreen()==4" (click)="menuItemClick('screen4')"><a href="javascript:void(0)">Gripper</a></li>
+    </ul> 
+    </div>
      <div class="gripper_listing">
          <div class="gripper_overview">
              <img class="gripper_image" src="/assets/icons/gripper1.png"/>

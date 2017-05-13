@@ -6,17 +6,17 @@
 }
 .parts_listing{
     width:70%;
-    height: 100%;
+    margin-top: 5%;
+    height: 80%;
     display: inline-block;
     margin-left: 2%;
 }
 .part_details{
     width:25%;
-    height: 100%;
-    margin-top: 4%;
+    margin-top: 5%;
+    height: 80%;
     display: inline-block;
     vertical-align: top;
-    padding-top:2%;
     text-align: center;
     font-size: 25px;
     
@@ -44,11 +44,12 @@
 .part_details_header{
     background-color: black;
     color:white;
-    font-weight: 600;
+    font-size: 20px;
     padding-top:10px;
     padding-bottom:10px;
 }
 .part_details_info{
     padding-top:8px;
+    font-size: 20px;
     padding-bottom:8px;
 }

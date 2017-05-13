@@ -10,7 +10,7 @@ import { Location }  from '@angular/common';
               '../screen4/screen4.component.css']
 })
 export class Screen4Component implements OnChanges,OnInit ,DoCheck,AfterContentInit,AfterContentChecked,AfterViewInit,AfterViewChecked,OnDestroy{
-  constructor(private logger: LoggerService,private data: DataService,private router:Router) {
+  constructor(private logger: LoggerService,private data: DataService,private router:Router,private location:Location) {
         this.data.setShowTopMenu(true);
     this.data.setShowLeftMenu(true);
     this.data.setShowBottomMenu(true);
@@ -34,4 +34,8 @@ export class Screen4Component implements OnChanges,OnInit ,DoCheck,AfterContentI
   ngOnDestroy() {
   }
     
+  menuItemClick(item) {
+    this.location.replaceState("/");
+    this.router.navigateByUrl(item);
+  }
 }
