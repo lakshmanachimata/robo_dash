@@ -14,12 +14,12 @@
 .gripper_details{
     width:25%;
     height: 100%;
-    margin-top: 4%;
+    margin-top: 1%;
     display: inline-block;
     vertical-align: top;
     padding-top:2%;
     text-align: center;
-    font-size: 25px;
+    font-size: 2.5vw;
     
 }
 .gripper_overview{
@@ -38,19 +38,19 @@
     color:#006FA2;
     text-align: center;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 2vw;
     width:100%;
     display: block;
 }
 .gripper_details_header{
     background-color: black;
     color:white;
-     font-size: 20px;
+    font-size: 1.5vw;
     padding-top:10px;
     padding-bottom:10px;
 }
 .gripper_details_info{
     padding-top:8px;
-     font-size: 20px;
+    font-size: 1.5vw;
     padding-bottom:8px;
 }
