@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { SharedModule } from '../../shared/shared.module'
 import { Screen1Component } from './screen1.component';
 import { RouterModule, Routes,Router }  from '@angular/router';
 import { LoggerService } from '../../logger.service';
