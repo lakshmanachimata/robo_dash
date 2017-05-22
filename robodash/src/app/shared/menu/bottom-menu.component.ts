@@ -9,9 +9,9 @@ import { RouterModule, Routes ,Router,RouterStateSnapshot} from '@angular/router
   styleUrls: ['./menu.component.css']
 })
 export class BottomMenuComponent implements OnChanges,OnInit ,DoCheck,AfterContentInit,AfterContentChecked,AfterViewInit,AfterViewChecked,OnDestroy{
-  constructor(private logger: LoggerService,private data: DataService,private router:Router) {
+  constructor(private logger: LoggerService,public data: DataService,private router:Router) {
   }
-  ngOnChanges() { 
+  ngOnChanges(Changes) { 
   }
   ngDoCheck() { 
   }

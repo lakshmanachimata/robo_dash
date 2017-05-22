@@ -10,11 +10,11 @@ import { Location }  from '@angular/common';
 })
 
 export class AppComponent  implements  OnChanges,OnInit ,DoCheck,AfterContentInit,AfterContentChecked,AfterViewInit,AfterViewChecked,OnDestroy{
-  constructor(private logger: LoggerService,private router:Router,private data:DataService,private location:Location) {
+  constructor(private logger: LoggerService,private router:Router,public data:DataService,private location:Location) {
     this.location.replaceState('/'); // clears browser history so they can't navigate with back button
     this.router.navigateByUrl('screens');
   }
-  ngOnChanges() { 
+  ngOnChanges(Changes) { 
   }
   ngOnInit() { 
   }

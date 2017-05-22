@@ -10,13 +10,13 @@ import { Location }  from '@angular/common';
               '../screen4/screen4.component.css']
 })
 export class Screen4Component implements OnChanges,OnInit ,DoCheck,AfterContentInit,AfterContentChecked,AfterViewInit,AfterViewChecked,OnDestroy{
-  constructor(private logger: LoggerService,private data: DataService,private router:Router,private location:Location) {
+  constructor(private logger: LoggerService,public data: DataService,private router:Router,private location:Location) {
         this.data.setShowTopMenu(true);
     this.data.setShowLeftMenu(true);
     this.data.setShowBottomMenu(true);
     this.data.setShowRightMenu(true);
   }
-  ngOnChanges() { 
+  ngOnChanges(Changes) { 
   }
   ngDoCheck() { 
   }

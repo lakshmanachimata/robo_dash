@@ -29,7 +29,7 @@ export class Screen0Component implements OnChanges,OnInit ,DoCheck,AfterContentI
 
   @ViewChild('loginModal') loginModalItem:Modal; 
 
-  constructor(private logger: LoggerService,private data: DataService,private router:Router,
+  constructor(public logger: LoggerService,public data: DataService,private router:Router,
   private location:Location,modal:ModalModule) {
     this.data.setShowTopMenu(false);
     this.data.setShowLeftMenu(false);
@@ -53,7 +53,7 @@ export class Screen0Component implements OnChanges,OnInit ,DoCheck,AfterContentI
   cancelLogin(){
     this.loginModalItem.close();
   }
-  ngOnChanges() { 
+  ngOnChanges(changes) { 
   }
   ngDoCheck() { 
   }

@@ -9,10 +9,10 @@ import { Location }  from '@angular/common';
   styleUrls: ['./menu.component.css']
 })
 export class LeftMenuComponent implements OnChanges,OnInit ,DoCheck,AfterContentInit,AfterContentChecked,AfterViewInit,AfterViewChecked,OnDestroy{
-  constructor(private logger: LoggerService,private data: DataService,
+  constructor(private logger: LoggerService,public data: DataService,
   private router:Router, private location: Location) {
   }
-  ngOnChanges() { 
+  ngOnChanges(Changes) { 
   }
   ngDoCheck() { 
   }

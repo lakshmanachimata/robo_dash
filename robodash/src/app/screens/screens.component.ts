@@ -10,7 +10,7 @@ import { Location }  from '@angular/common';
   styleUrls: ['./screens.component.css']
 })
 export class ScreensComponent {
-  constructor(private logger:LoggerService, private data:DataService,private router:Router,private location:Location) {
+  constructor(private logger:LoggerService, public data:DataService,private router:Router,private location:Location) {
       }
   ngOnInit() {
     this.location.replaceState("/")
