@@ -6,6 +6,9 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
-         
-  <WebBrowser Name="wbSample" Navigating="wbSample_Navigating"></WebBrowser>
+  <Grid>
+    <WebView x:Name="WebView1" Visibility="Visible" Height="Auto" Width="Auto" />
+    <Button x:Name="LoadWebPage" Content="Navigate" Click="LoadPage">
+    </Button>
+  </Grid>
 </Page>

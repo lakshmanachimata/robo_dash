@@ -25,7 +25,12 @@ namespace robodash
         public MainPage()
         {
             this.InitializeComponent();
-      //wbSample.Na
         }
+
+        public void LoadPage(Object robodash, RoutedEventArgs e)
+        {
+            Uri uri = new Uri("http://eenadu.net");
+            WebView1.Navigate(uri);
+    }
     }
 }
