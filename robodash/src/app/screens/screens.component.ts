@@ -14,7 +14,7 @@ export class ScreensComponent {
       }
   ngOnInit() {
     this.location.replaceState("/")
-    this.router.navigateByUrl('screen1');
+    this.router.navigateByUrl('screen0');
   }
 
 }

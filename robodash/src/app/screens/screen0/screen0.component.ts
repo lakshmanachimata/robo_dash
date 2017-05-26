@@ -27,6 +27,8 @@ export class Screen0Component implements OnChanges,OnInit ,DoCheck,AfterContentI
     new ControllerUnit("9","W4A4_R161","10.140.50.132","Controller I")
   ];
 
+  loginButtonText:string = "Login";
+
   @ViewChild('loginModal') loginModalItem:Modal; 
 
   constructor(public logger: LoggerService,public data: DataService,private router:Router,
@@ -47,8 +49,12 @@ export class Screen0Component implements OnChanges,OnInit ,DoCheck,AfterContentI
 
   login(){
       //do some authentication here
-      this.location.replaceState("/")
-      this.router.navigateByUrl('screen1');
+      this.loginButtonText = "Logging in...."
+      setTimeout(() => {
+          this.location.replaceState("/")
+          this.router.navigateByUrl('screen1');  
+      }, 2000);
+      
   }
   cancelLogin(){
     this.loginModalItem.close();

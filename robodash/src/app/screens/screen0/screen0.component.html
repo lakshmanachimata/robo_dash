@@ -58,11 +58,11 @@
             <div class="col-lg-10 col-lg-offset-1">
               <div class="form-group">
                     <label for="username">Username</label>
-                    <input type="text" class="form-control" id="username">
+                    <input type="text" class="form-control" id="username" value="Default user">
               </div>
               <div class="form-group">
                     <label for="password">Password</label>
-                    <input type="password" class="form-control" id="password">
+                    <input type="password" class="form-control" id="password" value="robotics">
               </div>
               <div class="form-group">
                   <div class="checkbox">
@@ -70,7 +70,7 @@
                   </div>
               </div>
               <div class="form-group pull-right">
-                  <button type="button" class="btn" (click)="login();">Login</button>
+                  <button type="button" class="btn" (click)="login();">{{loginButtonText}}</button>
                   <button type="button" class="btn" (click)="cancelLogin();">Cancel</button>    
               </div>
                 
