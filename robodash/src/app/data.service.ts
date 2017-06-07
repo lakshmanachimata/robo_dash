@@ -1,11 +1,12 @@
 import {Injectable,EventEmitter} from '@angular/core';
-import {Http} from '@angular/http';
+import {Http,Response} from '@angular/http';
 import {LoggerService} from './logger.service';
-
+import { Observable } from 'rxjs/Observable';
 import { RouterModule, Routes,Router }  from '@angular/router';
 import { Location }  from '@angular/common';
-
-
+import 'rxjs/add/operator/catch';
+import 'rxjs/add/operator/map';
+import * as http from 'http';
 export class UIParams {
     showTopMenu = false;
     showLeftMenu = false;
@@ -22,8 +23,7 @@ export class DataService {
     uiParams:UIParams   =  new UIParams();
     deviceParams:DeviceParams   =  new DeviceParams();
 
-    constructor(private router:Router,private location:Location) {
-
+    constructor(private router:Router,private location:Location,private http:Http) {
     }
 
     getSelectedControllerID(){
@@ -63,4 +63,35 @@ export class DataService {
     setScreen(number) {
         this.uiParams.screenNumber = number;
     }
+    connectToController(ip){
+        let httpOptions = this.makeRequestHeaders(ip,80,'');
+        httpOptions.method = 'GET';
+        var req = http.request(httpOptions, function(res) {
+            res.on('data', function(data) {
+                console.log(data)
+            });
+            res.on('error',function(error){
+                console.log(error)
+            });
+            res.on('close',function(){
+            });
+            res.on('end',function(){
+            });
+        });
+        req.end();
+        req.on('error', function(e) {
+            console.log(e);
+        });
+    }
+
+     makeRequestHeaders(ip,inport,inpath){
+        let options = {
+            hostname: ip,
+            port: inport,
+            method:'',
+            path:inpath,
+        }
+        return options;
+    }
+
 }

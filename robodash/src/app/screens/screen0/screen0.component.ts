@@ -47,6 +47,10 @@ export class Screen0Component implements OnChanges,OnInit ,DoCheck,AfterContentI
     return this.sortUITypes;
   }
 
+  connectController(item){
+    this.data.connectToController(item)
+    //this.loginModalItem.open();
+  }
   login(){
       //do some authentication here
       this.loginButtonText = "Logging in...."

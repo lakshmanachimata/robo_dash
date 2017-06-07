@@ -32,7 +32,7 @@
       <div class="controller-footer">
             <button class="btn btnabb" >Refresh</button>
             <div class="btngap"></div>
-            <button class="btn btn-primary btnabb" *ngIf="data.getSelectedControllerID()!=''" (click)="loginModal.open();">Connect</button>
+            <button class="btn btn-primary btnabb" *ngIf="data.getSelectedControllerID()!=''" (click)="connectController('192.168.9.120')">Connect</button>
       </div>
 </div>
 
