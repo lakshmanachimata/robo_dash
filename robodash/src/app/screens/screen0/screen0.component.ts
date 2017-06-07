@@ -24,7 +24,8 @@ export class Screen0Component implements OnChanges,OnInit ,DoCheck,AfterContentI
     new ControllerUnit("6","W4A4_R171","10.140.50.131","Controller N"),
     new ControllerUnit("7","W4A4_R13","10.140.50.102","Controller C"),
     new ControllerUnit("8","W4A4_R131","10.140.50.200","Controller J"),
-    new ControllerUnit("9","W4A4_R161","10.140.50.132","Controller I")
+    new ControllerUnit("9","W4A4_R161","10.140.50.132","Controller I"),
+    new ControllerUnit("9","W4A4_R172","10.140.50.144","Controller K")
   ];
 
   loginButtonText:string = "Login";
