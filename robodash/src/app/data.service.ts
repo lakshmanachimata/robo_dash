@@ -68,7 +68,10 @@ export class DataService {
         httpOptions.method = 'GET';
         var req = http.request(httpOptions, function(res) {
             res.on('data', function(data) {
-                console.log(data)
+                console.log(data.toString())
+            });
+            res.on('headers', function(data) {
+                console.log(data.toString())
             });
             res.on('error',function(error){
                 console.log(error)
